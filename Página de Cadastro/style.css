@@ -1,8 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
+
+nav {
+/*     border: green solid; */
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+}
+
+.more {
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#seta {
+    position: absolute;
+    padding: 7px;
+    transform: rotate(-135deg);
+    box-shadow: 2px -2px 0 1px rgb(25, 0, 255) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin-left: 110px;
+}
+
+nav span {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    padding: 2px 9px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+nav p {
+
+    font-size: 18px;
+}
+
+
+
+header {
+/*     border: red solid; */
+    border-bottom: #222222ff solid 7px;
+    height: 750px;
+    width: 100vw; 
+    
+}
+
+header {
+    border-top: 10px solid;
+    background: url(./img/Wallpaper-Header.jpg);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 150px;
+    
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.center h1 {
+    font-size: 60px;
+    width: 800px;
+    font-weight: 600;
+}
+
+.center p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.center form {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.form-content {
+    position: relative;
+}
+
+.center form #email {
+    width: 700px;
+    height: 70px;
+    outline: 0;
+
+}
+
+#email::placeholder {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.center form div button {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    top: 1px;
+    height: 68px;
+    font-size: 26px;
+    color: #fff;
+    background: red;
+    padding-right: 10px;
+    border: none;
+}
+
+#seta2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 26px 20px;
+    padding: 9px;
+    transform: rotate(-135deg);
+    box-shadow: 2px -2px 0 1px rgb(255, 255, 255) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    
+}
+
+
+.nav-header {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1%;
+}
+
+.nav-header div {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-header div select {
+    height: 35px;
+    width: 130px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    padding-left: 30px;
+    position: relative;
+}
+
+.nav-header div select:focus {
+    background: rgb(100, 100, 100);
+    outline: 0;
+}
+
+#icon-internet {
+    margin: 7px;
+    position: absolute;
+    filter: invert();
+}
+
+.nav-header div button {
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: red;
+    font-size: 16px;
+    width: 80px;
+}
+
+main {
+    width: 100vw;
+    background: black;
+    height: 500px;
+}
+
+
+
 
