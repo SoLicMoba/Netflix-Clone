@@ -19,6 +19,7 @@ nav {
     align-items: center;
     gap: 10px;
     cursor: default;
+    
 }
 
 .more {
@@ -70,6 +71,7 @@ header {
     background-size: cover;
     background-position: center; 
     position: relative;
+    
     
 }
 
@@ -128,7 +130,8 @@ header {
     color: #fff;
     background: red;
     padding-right: 10px;
-    border: none;
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 #seta2 {
@@ -184,19 +187,190 @@ header {
 
 .nav-header div button {
     color: white;
-    border: none;
     border-radius: 2px;
     background-color: red;
     font-size: 16px;
-    width: 80px;
+    width: 80px;      
+    border: none; 
 }
 
 main {
     width: 100vw;
     background: black;
-    height: 500px;
+    border-bottom: #222222ff solid 7px;;
+}
+
+.sessao-1 {
+    height: 465px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: #222222ff solid 7px;
+
+    
+}
+
+.sessao-1 div:nth-child(1) {
+    
+    width: 600px;
+    
+}
+
+.sessao-1 h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.sessao-1 p {
+    font-size: 24px;
+}
+
+.sessao-1 div:nth-child(2) {
+    position: relative;
+    z-index: 5;
+}
+
+.sessao-1 div:nth-child(2) video {
+    position: absolute;
+    right: 32px;
+    top: 60px;
+    width: 400px;
+    z-index: -5;
+}
+
+.sessao-2 {
+
+    height: 530px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom: #222222ff solid 7px;;
+    
+}
+
+.sessao-2 div:nth-child(1) {
+    position: relative;
+    z-index: 3;
+}
+
+.sessao-2 h2 {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.sessao-2 p {
+    width: 600px;
+    font-size: 26px;
+}
+
+.sessao-2 div:nth-child(1) video {
+    z-index: -6;
+    position: absolute;
+    left: 97px;
+    top: 35px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.sessao-3 {
+    height: 520px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #222222ff solid 7px;
+    gap: 100px;
+}
+
+.sessao-3 h2 {
+    width: 400px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.sessao-4 {
+    height: 460px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    border-bottom: #222222ff solid 7px;
+    
+}
+
+.sessao-3 p {
+    width: 600px;
+    font-size: 26px;
+}
+
+.sessao-4 h2 {
+    width: 500px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.sessao-4 p {
+    width: 550px;
+    font-size: 26px;
+}
+
+.sessao-4 div:nth-child(1) {
+    position: relative;
+}
+
+.sessao-4 .box-mobile {
+    left: 60px;
+    position: absolute;
+    bottom: 40px;
+    height: 110px;
+    padding: 10px;
+    overflow: hidden;;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    border: #222222ff solid;
+    width: 360px;
+}
+.box-mobile span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.box-mobile p {
+    font-size: 14.4px;
+    color: #0071eb;
+}
+
+.box-mobile .content-mobile-box {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+
+.icon-download {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.icon-download img {
+    width: 50px;
 }
 
 
 
 
+/* Feat. @Weler */
+
+
+.per-f {
+    height: 1020px;
+    border-bottom: #222222ff solid 7px;
+}
+
+footer {
+    height: 420px;
+}
