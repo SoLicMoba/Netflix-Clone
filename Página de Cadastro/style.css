@@ -382,7 +382,7 @@ main {
     letter-spacing: 0.7px;
 }
 .options-container{
-    gap: 9px;
+    gap: 4px;
     width: 66.5%;
     display: flex;
     flex-direction: column;
@@ -398,9 +398,13 @@ main {
     justify-content: space-between; 
     font-size: 26px;
     font-family: 'Helvetica';
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
-.option> img{
+.option-img{
     width: 40px;
+    height: 40px;
 }
 
 .option-expand-1,
@@ -410,16 +414,26 @@ main {
 .option-expand-5,
 .option-expand-6,
 .option-expand-7{
-    transition: 0.5s;
-    display: none;
+    height: 0px;
+    transition: 0.1s;
+    background-color:#303030;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
 }
 
 /*Class for JavaScript*/
 .option-expand-on{
-    transition: 0.5s;
-    display: block;
-    background-color:#303030;
-    padding: 10px;
+    margin-top: -3px;
+    padding: 30px 30px;
+    height: fit-content;
+    transition: 0.1s;
+
+}
+.saiba-mais{
+    text-decoration: underline;
+    color: white;
 }
 .options-container > div{
 }
@@ -428,7 +442,8 @@ main {
     cursor: pointer;
 }
 .email-container{
-    width: 57%;
+    width: 100%;
+    margin: auto;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
@@ -438,13 +453,14 @@ main {
 .email-container > p{
     font-size: 18px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 
 
 .email-container-interno{
     height: 60px;
-    width: 95%;
+    width: 80%;
     display: flex;
     
 }
@@ -474,20 +490,23 @@ main {
     margin: 0px;
 }
 footer {
-    height: 420px;
     color: #737373;
     justify-content: center;
-    padding: 70px 230px;
+    padding: 60px 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     
     
 }
 footer > p {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
 }
 .f-container-ul{
     width: 90%;
     gap: 70px;
     display: flex;
+    margin-bottom: 10px;
     
 }
 .f-container-ul > ul{
@@ -517,19 +536,36 @@ footer > p {
     background: rgb(100, 100, 100);
     outline: 0;
 }
-footer > select{
-    width: 170px;
-    height: 60px;
-    background-color: transparent;
-    border: 1px solid #737373;
+
+ 
+
+
+
+.f-select-div{
+        display: flex;
+
+}
+.f-select-div > select{
+    width: 160px;
+    height: 55px;
+
+    border: 1px solid #73737386;
     color: #898989;
-    font-size: 17px;
+    font-size: 16px;
     background: url("./img/internet-svgrepo-com.svg");
     background-position: right 5px top 50%;
+    padding-left: 50px;
+    }
+.f-select-div > select > option{
+    background-color: #000000;
 }
-footer > #icon-internet{
+.f-select-div > #icon-internet{
+    position: relative;
+    left: -150px;
+    width: 16px;
+    
 
 }
 footer > p {
-
+    margin-top: 10px;
 }
