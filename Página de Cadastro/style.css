@@ -388,13 +388,7 @@ main {
     flex-direction: column;
     margin-top: 50px;
 }
-#expand-1,
-#expand-2,
-#expand-3,
-#expand-4,
-#expand-5,
-#expand-6,
-#expand-7{
+.option{
     background-color:#303030;
     height: 75px;
     padding: 0px 30px;
@@ -405,24 +399,27 @@ main {
     font-size: 26px;
     font-family: 'Helvetica';
 }
-#expand-1 > img,
-#expand-2 > img,
-#expand-3 > img,
-#expand-4 > img,
-#expand-5 > img,
-#expand-6 > img,
-#expand-7 > img{
+.option> img{
     width: 40px;
 }
 
-.expand-1-data,
-.expand-2-data,
-.expand-3-data,
-.expand-4-data,
-.expand-5-data,
-.expand-6-data,
-.expand-7-data{
+.option-expand-1,
+.option-expand-2,
+.option-expand-3,
+.option-expand-4,
+.option-expand-5,
+.option-expand-6,
+.option-expand-7{
+    transition: 0.5s;
     display: none;
+}
+
+/*Class for JavaScript*/
+.option-expand-on{
+    transition: 0.5s;
+    display: block;
+    background-color:#303030;
+    padding: 10px;
 }
 .options-container > div{
 }
