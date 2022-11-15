@@ -11,7 +11,7 @@
 }
 
 nav {
-/*     border: green solid; */
+    /*     border: green solid; */
     height: 70px;
     background-color: #fff;
     display: flex;
@@ -19,7 +19,7 @@ nav {
     align-items: center;
     gap: 10px;
     cursor: default;
-    
+
 }
 
 .more {
@@ -58,21 +58,21 @@ nav p {
 
 
 header {
-/*     border: red solid; */
+    /*     border: red solid; */
     border-bottom: #222222ff solid 7px;
     height: 750px;
-    width: 100vw; 
-    
+    width: 100vw;
+
 }
 
 header {
     border-top: 10px solid;
     background: url(./img/Wallpaper-Header.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     position: relative;
-    
-    
+
+
 }
 
 .center {
@@ -80,7 +80,7 @@ header {
     align-items: center;
     display: flex;
     padding: 150px;
-    
+
     flex-direction: column;
     color: white;
     text-align: center;
@@ -144,7 +144,7 @@ header {
     box-shadow: 2px -2px 0 1px rgb(255, 255, 255) inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
-    
+
 }
 
 
@@ -190,14 +190,15 @@ header {
     border-radius: 2px;
     background-color: red;
     font-size: 16px;
-    width: 80px;      
-    border: none; 
+    width: 80px;
+    border: none;
 }
 
 main {
     width: 100vw;
     background: black;
-    border-bottom: #222222ff solid 7px;;
+    border-bottom: #222222ff solid 7px;
+    ;
 }
 
 .sessao-1 {
@@ -209,19 +210,20 @@ main {
 
     border-bottom: #222222ff solid 7px;
 
-    
+
 }
 
 .sessao-1 div:nth-child(1) {
-    
+
     width: 600px;
-    
+
 }
 
 .sessao-1 h2 {
     font-size: 50px;
     font-weight: 600;
 }
+
 .sessao-1 p {
     font-size: 24px;
 }
@@ -247,8 +249,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border-bottom: #222222ff solid 7px;;
-    
+    border-bottom: #222222ff solid 7px;
+    ;
+
 }
 
 .sessao-2 div:nth-child(1) {
@@ -299,7 +302,7 @@ main {
     align-items: center;
     gap: 150px;
     border-bottom: #222222ff solid 7px;
-    
+
 }
 
 .sessao-3 p {
@@ -328,12 +331,14 @@ main {
     bottom: 40px;
     height: 110px;
     padding: 10px;
-    overflow: hidden;;
+    overflow: hidden;
+    ;
     border-radius: 10px;
     background: rgb(0, 0, 0);
     border: #222222ff solid;
     width: 360px;
 }
+
 .box-mobile span {
     font-weight: bold;
     font-size: 16px;
@@ -366,7 +371,7 @@ main {
 /* Feat. @Weler */
 
 
-.section-5{
+.section-5 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -376,33 +381,37 @@ main {
     color: white;
     border-bottom: #222222ff solid 7px;
 }
-.section-5> h1{
+
+.section-5>h1 {
     font-size: 48px;
     font-family: 'Helvetica';
     letter-spacing: 0.7px;
 }
-.options-container{
+
+.options-container {
     gap: 4px;
     width: 66.5%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
-.option{
-    background-color:#303030;
+
+.option {
+    background-color: #303030;
     height: 75px;
     padding: 0px 30px;
     padding-right: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     font-size: 26px;
     font-family: 'Helvetica';
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
 }
-.option-img{
+
+.option-img {
     width: 40px;
     height: 40px;
 }
@@ -413,10 +422,10 @@ main {
 .option-expand-4,
 .option-expand-5,
 .option-expand-6,
-.option-expand-7{
+.option-expand-7 {
     height: 0px;
     transition: 0.1s;
-    background-color:#303030;
+    background-color: #303030;
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -424,24 +433,26 @@ main {
 }
 
 /*Class for JavaScript*/
-.option-expand-on{
+.option-expand-on {
     margin-top: -3px;
     padding: 30px 30px;
     height: fit-content;
     transition: 0.1s;
 
 }
-.saiba-mais{
+
+.saiba-mais {
     text-decoration: underline;
     color: white;
 }
-.options-container > div{
-}
 
-.options-container > div:hover{
+.options-container>div {}
+
+.options-container>div:hover {
     cursor: pointer;
 }
-.email-container{
+
+.email-container {
     width: 100%;
     margin: auto;
     margin-top: 70px;
@@ -450,76 +461,96 @@ main {
     align-items: center;
     margin-bottom: 30px;
 }
-.email-container > p{
+
+.email-container>p {
     font-size: 18px;
     margin-bottom: 15px;
     width: 100%;
 }
 
-
-
-.email-container-interno{
-    height: 60px;
-    width: 80%;
+.email-container-interno {
+    width: 700px;
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
 }
-.email-container-interno > input{   
-    width: 70%;
+
+.email-container-interno>input {
+    width: 650px;
     outline: none;
     padding-left: 10px;
     font-size: 16px;
+    height: 60px;
 }
-.btn-assinatura{
-    width: 27%;
+
+.btn-assinatura {
+    width: 180px;
     background-color: #F40612;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    height: 60px;
 
 }
-.btn-assinatura > p {
+
+.btn-assinatura>p {
     font-size: 24px;
 }
-.btn-assinatura > img{
+
+.btn-assinatura>img {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     width: 20px;
     margin: 0px;
 }
+
+
 footer {
     color: #737373;
     justify-content: center;
-    padding: 60px 230px;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
-    
+
+
 }
-footer > p {
+
+.footer-container {
+    width: 910px;
+    margin: auto;
+}
+
+.footer-container>p {
     margin-bottom: 15px;
 }
-.f-container-ul{
+
+.f-container-ul {
     width: 90%;
     gap: 70px;
     display: flex;
     margin-bottom: 10px;
-    
+
 }
-.f-container-ul > ul{
+
+.f-container-ul>ul {
     width: auto;
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
-.f-container-ul > ul > li {
+.f-container-ul>ul>li {
 
     font-size: 13px;
     letter-spacing: 0.5px;
+}
+.f-a{
+    color: #737373;
 }
 
 .nav-header div select {
@@ -537,15 +568,16 @@ footer > p {
     outline: 0;
 }
 
- 
 
 
 
-.f-select-div{
-        display: flex;
+
+.f-select-div {
+    display: flex;
 
 }
-.f-select-div > select{
+
+.f-select-div>select {
     width: 160px;
     height: 55px;
 
@@ -555,17 +587,153 @@ footer > p {
     background: url("./img/internet-svgrepo-com.svg");
     background-position: right 5px top 50%;
     padding-left: 50px;
-    }
-.f-select-div > select > option{
+}
+
+.f-select-div>select>option {
     background-color: #000000;
 }
-.f-select-div > #icon-internet{
+
+.f-select-div>#icon-internet {
     position: relative;
     left: -150px;
     width: 16px;
-    
+
 
 }
-footer > p {
+
+.footer-container>p {
     margin-top: 10px;
 }
+
+
+@media screen and (max-width: 950px) {
+    .section-5 {}
+
+    .options-container {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px 50px;
+        padding-top: 60px;
+    }
+
+    .section-5>h1 {
+        font-size: 38px;
+    }
+
+    .options-container {
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    .option {
+        height: 57px;
+        font-size: 20px;
+        padding: 0px 25px;
+    }
+
+    .email-container>p {
+        width: 100%;
+        font-size: calc(10px + 1vw);
+        line-height: 24px;
+        overflow: hidden;
+        margin-top: -5px;
+    }
+
+    .email-container-interno {
+        width: 500px;
+        gap: 10px;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .btn-assinatura {
+        height: 40px;
+        width: 120px;
+        font-size: 15px;
+    }
+
+    .btn-assinatura>p {
+        font-size: 15px;
+    }
+
+    .btn-assinatura>img {
+        width: 15px;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+    .f-container-ul {
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .email-container-interno>input {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section-5 {
+        padding: 0;
+    }
+
+    .section-5>h1 {
+        font-size: calc(22px + 1vw);
+        margin-top: 50px;
+        margin-bottom: -10px;
+    }
+
+    .option-expand-1, .option-expand-2, .option-expand-3, .option-expand-4, .option-expand-5, .option-expand-6, .option-expand-7 {
+
+            font-size: 18px;
+        }
+
+        .email-container {
+            margin-top: 30px;
+        }
+
+        .email-container-interno {
+            width: 90%;
+        }
+
+        .option {
+            height: 50px;
+        }
+
+        .option-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .options-container {
+
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 510px) {
+        footer{
+            padding: 10px;
+        }
+        .footer-container{
+            margin-top: 20px;
+        }
+        
+        .f-container-ul > ul > li{
+            font-size: 10px;
+        }
+        .option{
+            font-size:18px;
+            text-align: left;
+            padding: 10px 20px;
+            overflow: hidden;
+            height: auto;
+        }
+    }
