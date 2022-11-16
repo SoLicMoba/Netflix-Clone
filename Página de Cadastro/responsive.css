@@ -320,7 +320,11 @@
         gap: 10px;
     }
 }
-
+@media screen and (max-width: 1300px){
+    .footer-container > p{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 730px) {
 
     .email-container-interno>input {
@@ -396,5 +400,11 @@
         padding: 10px 20px;
         overflow: hidden;
         height: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .btn-assinatura > p{
+        padding: 0px;
+        margin: 0px;
     }
 }

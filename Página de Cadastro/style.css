@@ -373,13 +373,12 @@ main {
 
 .section-5 {
     text-align: center;
+    padding: 50px 20px;
+    color: white;
+    border-bottom: #222222ff solid 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 50px 70px;
-    color: white;
-    border-bottom: #222222ff solid 7px;
 }
 
 .section-5>h1 {
@@ -390,7 +389,7 @@ main {
 
 .options-container {
     gap: 4px;
-    width: 66.5%;
+    width: 62%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -452,10 +451,11 @@ main {
 .email-container {
     width: 100%;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -466,11 +466,11 @@ main {
 }
 
 .email-container-interno {
-    width: 77%;
+  
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: auto;
+
+
 }
 
 .email-container-interno>input {
@@ -502,7 +502,10 @@ main {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     width: 20px;
-    margin: 0px;
+    height: 20px;
+
+
+
 }
 
 
