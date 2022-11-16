@@ -466,12 +466,11 @@ main {
 }
 
 .email-container-interno {
-    width: 700px;
+    width: 77%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-
 }
 
 .email-container-interno>input {
@@ -491,7 +490,8 @@ main {
     justify-content: center;
     gap: 5px;
     height: 60px;
-
+    padding: 0px 10px;
+    overflow: hidden;
 }
 
 .btn-assinatura>p {
@@ -546,7 +546,8 @@ footer {
     font-size: 13px;
     letter-spacing: 0.5px;
 }
-.f-a{
+
+.f-a {
     color: #737373;
 }
 
@@ -602,134 +603,3 @@ footer {
     margin-top: 10px;
 }
 
-
-@media screen and (max-width: 950px) {
-
-    .options-container {
-        width: 100%;
-    }
-
-    footer {
-        padding: 10px 50px;
-        padding-top: 60px;
-    }
-
-    .section-5>h1 {
-        font-size: 38px;
-    }
-
-    .options-container {
-        width: 95%;
-        margin-top: 30px;
-    }
-
-    .option {
-        height: 57px;
-        font-size: 20px;
-        padding: 0px 25px;
-    }
-
-    .email-container>p {
-        width: 100%;
-        font-size: calc(10px + 1vw);
-        line-height: 24px;
-        overflow: hidden;
-        margin-top: -5px;
-    }
-
-    .email-container-interno {
-        width: 500px;
-        gap: 10px;
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
-    }
-
-    .btn-assinatura {
-        height: 40px;
-        width: 120px;
-        font-size: 15px;
-    }
-
-    .btn-assinatura>p {
-        font-size: 15px;
-    }
-
-    .btn-assinatura>img {
-        width: 15px;
-    }
-
-    .footer-container {
-        width: 90%;
-    }
-
-    .f-container-ul {
-        width: 100%;
-        gap: 10px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-
-    .email-container-interno>input {
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .section-5 {
-        padding: 0;
-    }
-
-    .section-5>h1 {
-        font-size: calc(22px + 1vw);
-        margin-top: 50px;
-        margin-bottom: -10px;
-    }
-
-    .option-expand-1, .option-expand-2, .option-expand-3, .option-expand-4, .option-expand-5, .option-expand-6, .option-expand-7 {
-
-            font-size: 18px;
-        }
-
-        .email-container {
-            margin-top: 30px;
-        }
-
-        .email-container-interno {
-            width: 90%;
-        }
-
-        .option {
-            height: 50px;
-        }
-
-        .option-img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .options-container {
-
-            width: 100%;
-        }
-    }
-    @media screen and (max-width: 510px) {
-        footer{
-            padding: 10px;
-        }
-        .footer-container{
-            margin-top: 20px;
-        }
-        
-        .f-container-ul > ul > li{
-            font-size: 10px;
-        }
-        .option{
-            font-size:18px;
-            text-align: left;
-            padding: 10px 20px;
-            overflow: hidden;
-            height: auto;
-        }
-    }
