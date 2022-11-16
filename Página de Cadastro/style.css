@@ -11,7 +11,7 @@
 }
 
 nav {
-/*     border: green solid; */
+    /*     border: green solid; */
     height: 70px;
     background-color: #fff;
     display: flex;
@@ -19,7 +19,7 @@ nav {
     align-items: center;
     gap: 10px;
     cursor: default;
-    
+
 }
 
 .more {
@@ -58,21 +58,21 @@ nav p {
 
 
 header {
-/*     border: red solid; */
+    /*     border: red solid; */
     border-bottom: #222222ff solid 7px;
     height: 750px;
-    width: 100vw; 
-    
+    width: 100vw;
+
 }
 
 header {
     border-top: 10px solid;
     background: url(./img/Wallpaper-Header.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     position: relative;
-    
-    
+
+
 }
 
 .center {
@@ -80,7 +80,7 @@ header {
     align-items: center;
     display: flex;
     padding: 150px;
-    
+
     flex-direction: column;
     color: white;
     text-align: center;
@@ -144,7 +144,7 @@ header {
     box-shadow: 2px -2px 0 1px rgb(255, 255, 255) inset;
     border: solid transparent;
     border-width: 0 0 2px 2px;
-    
+
 }
 
 
@@ -190,14 +190,15 @@ header {
     border-radius: 2px;
     background-color: red;
     font-size: 16px;
-    width: 80px;      
-    border: none; 
+    width: 80px;
+    border: none;
 }
 
 main {
     width: 100vw;
     background: black;
-    border-bottom: #222222ff solid 7px;;
+    border-bottom: #222222ff solid 7px;
+    ;
 }
 
 .sessao-1 {
@@ -209,19 +210,20 @@ main {
 
     border-bottom: #222222ff solid 7px;
 
-    
+
 }
 
 .sessao-1 div:nth-child(1) {
-    
+
     width: 600px;
-    
+
 }
 
 .sessao-1 h2 {
     font-size: 50px;
     font-weight: 600;
 }
+
 .sessao-1 p {
     font-size: 24px;
 }
@@ -247,8 +249,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border-bottom: #222222ff solid 7px;;
-    
+    border-bottom: #222222ff solid 7px;
+    ;
+
 }
 
 .sessao-2 div:nth-child(1) {
@@ -299,7 +302,7 @@ main {
     align-items: center;
     gap: 150px;
     border-bottom: #222222ff solid 7px;
-    
+
 }
 
 .sessao-3 p {
@@ -328,12 +331,14 @@ main {
     bottom: 40px;
     height: 110px;
     padding: 10px;
-    overflow: hidden;;
+    overflow: hidden;
+    ;
     border-radius: 10px;
     background: rgb(0, 0, 0);
     border: #222222ff solid;
     width: 360px;
 }
+
 .box-mobile span {
     font-weight: bold;
     font-size: 16px;
@@ -437,6 +442,7 @@ main {
     text-decoration: underline;
     color: white;
 }
+
 
 
 .options-container>div:hover {
