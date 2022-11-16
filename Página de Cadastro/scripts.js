@@ -105,4 +105,46 @@ for (let i = 0; i < options.length; i++) {
     })
 }
 
-//========================================================
+//=======================  API   ================================
+        //Top Rated movies
+        const api ='https://api.themoviedb.org/3/movie/top_rated?api_key=81ac62a4b4396887e5b37de336d62a90'
+         async function api_call (url) {
+            const res = await fetch (url)
+            const data = await res.json()
+            const filmes = data.results
+            //Percorre cada filme, cria div e adiciona elementos a esta div
+            filmes.map(filme =>{
+                const api_id = filme.id
+                const api_poster =  `https://image.tmdb.org/t/p/w500/${filme.poster_path}`
+                const api_title = filme.title
+                const api_description = filme.overview
+                const api_release = filme.release_date
+                const api_vote_average = filme.vote_average
+
+                const card = document.createElement('div')
+                const card_img = document.createElement('img')
+                const card_title = document.createElement('h1')
+                const card_description = document.createElement('p')
+                const card_release = document.createElement('p')
+                const card_vote_average = document.createElement('p')
+
+                card_img.setAttribute('id', api_id)
+                card_img.src =api_poster
+
+                card_title.textContent=api_title
+                card_description.textContent=api_description
+                card_vote_average.textContent=api_vote_average
+                card_release.textContent=api_release
+
+                card.appendChild(card_img)
+                card.appendChild(card_title)
+                card.appendChild(card_description)
+                card.appendChild(card_release)
+                card.appendChild(card_vote_average)
+                
+                document.body.appendChild(card)
+                console.log(filme);
+            })
+
+        }
+        api_call(api)
