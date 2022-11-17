@@ -3,15 +3,22 @@ body {
     color: white;
     font-family: 'Helvetica';
 }
+.preview-container{
+    height: 450px;
+    display: flex;
+    border: 1px solid green;
 
+}
 .popular-container {
     width: 100%;
     border: 1px solid green;
 
 }
-
+p{
+    font-size: 24px;
+}
 .popular-movies-container {
-    height: 250px;
+    height: 180px;
     width: 97%;
     border: 1px solid red;
     display: inline-block;
@@ -21,14 +28,16 @@ body {
     text-align: center;
     padding-bottom: 10px !important;
     display: flex;
+    overflow-y: hidden;
     align-items: center;
+    padding-top: 10px;
 }
 
 .card {}
 
 .card-img {
-    height: 120px;
-    width: 200px;
+    height: 160px;
+    width: 240px;
     overflow: scroll;
     z-index: 2;
     transition: 0.1s;
@@ -64,16 +73,27 @@ body {
     background-color: rgba(255, 255, 255, 0.738);
 }
 
-.popup-screen-movie{
-    width: 100vw;
-    height: 100vh;
+.preview-left-info{
+    width: 40%;
+    height: 100%;
     background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    left: 0px;
+    padding: 15px;
 }
-/*Class for JS*/
-.popup-screen-movie-hide{
-    display: none;
+.preview-title{
+    width: 100%;
+    text-align: center;
+}
+.preview-general-info_container{
+    width: 100%;
+    border: 1px solid red;
+    height: 30px;
+}
+.preview-cover{
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    right: 0px;
 }
