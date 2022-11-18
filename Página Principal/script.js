@@ -62,8 +62,9 @@ function movie_preview(x) {
         const data = await res.json()
         const filmes = data.results
         const movie = filmes.find(m => m.id === movie_id)
+        console.log(movie)
         //Cria imagem do preview
- /*        const preview_cover = document.createElement('img')
+         const preview_cover = document.createElement('img')
         preview_cover.src= `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
         preview_cover.classList.add('preview-cover')
         //Cria container de informações do filme ao lado esquerdo
@@ -77,10 +78,65 @@ function movie_preview(x) {
         const preview_general_info_container = document.createElement('div')
         preview_general_info_container.classList.add('preview-general-info_container')
 
+
+        const movie_popularity = document.createElement('p')
+        movie_popularity.textContent = `${movie.popularity}% Relevante`
+        movie_popularity.classList.add('movie-popularity')
+
+        const movie_releaseDate = document.createElement('p')
+        movie_releaseDate.classList.add('movie-release-date')
+        movie_releaseDate.textContent=movie.release_date
+
+        const movie_age = document.createElement('div')
+        movie_age.classList.add('movie-age')
+        movie_age.textContent=14
+
+        const movie_duration = document.createElement('p')
+        movie_duration.classList.add('movie-duration')
+        movie_duration.textContent='1:47h'
+
+        const top_5_brasil = document.createElement('p')
+        top_5_brasil.textContent='Top 5 hoje no Brasil'
+        top_5_brasil.classList.add('top-5')
+
+        const movie_description = document.createElement('p')
+        movie_description.textContent=movie.overview
+        movie_description.classList.add('movie-description')
+
+        const btn_Container = document.createElement('div')
+        btn_Container.classList.add('btn-container')
+
+        const btn_assistir = document.createElement('div')
+        btn_assistir.classList.add('btn-assitir')
+        btn_assistir.innerHTML='Assistir'
+        
+        const btn_assistir_svg = document.createElement('div')
+        btn_assistir_svg.classList.add('btn-assitir-svg')
+
+        const btn_minhaLista = document.createElement('div')
+        btn_minhaLista.classList.add('btn-minh-lista')
+        btn_minhaLista.textContent='Minha lista'
+
+
+
         preview_leftInfo.appendChild(preview_title)
-        preview_general_info_container.appendChild(preview_general_info_container)
+        preview_leftInfo.appendChild(preview_general_info_container)
+
+        preview_general_info_container.appendChild(movie_popularity)
+        preview_general_info_container.appendChild(movie_releaseDate)
+        preview_general_info_container.appendChild(movie_age)
+        preview_general_info_container.appendChild(movie_duration)
+        preview_leftInfo.appendChild(top_5_brasil)
+        preview_leftInfo.appendChild(movie_description)
+        preview_leftInfo.appendChild(btn_Container)
+        btn_assistir.appendChild(btn_assistir_svg)
+        btn_Container.appendChild(btn_assistir)
+        btn_Container.appendChild(btn_minhaLista)
+
+
+
         preview_container.appendChild(preview_leftInfo)
-        preview_container.appendChild( preview_cover) */
+        preview_container.appendChild( preview_cover) 
     }
     api_call_preview(api)
 

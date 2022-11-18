@@ -4,7 +4,7 @@ body {
     font-family: 'Helvetica';
 }
 .preview-container{
-    height: 450px;
+    height: 550px;
     display: flex;
     border: 1px solid green;
 
@@ -80,15 +80,22 @@ p{
     position: relative;
     left: 0px;
     padding: 15px;
+    padding-top: 70px;
 }
 .preview-title{
     width: 100%;
-    text-align: center;
+    margin: 0px;
+    font-size: 60px;
 }
 .preview-general-info_container{
     width: 100%;
-    border: 1px solid red;
-    height: 30px;
+
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
 }
 .preview-cover{
     width: 60%;
@@ -96,4 +103,90 @@ p{
     background-size: cover;
     position: relative;
     right: 0px;
+}
+.movie-popularity{
+    color: green;
+    font-size: 17px;
+    font-weight: bold;
+}
+.movie-release-date{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.movie-age{
+    height: 70%;
+    width: 30px;
+    border-radius: 1px;
+    color: white;
+    font-size: 21px;
+    background-color: orangered;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.top-5{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.movie-duration{
+    font-size: 18px;
+    font-weight: bold;
+}
+.movie-description{
+    font-size: 15px;
+    color: rgb(175, 175, 175);
+}
+.btn-container{
+    border: 2px solid red;
+    margin-TOP: 9PX;
+    display: flex;
+    gap: 20px;
+}
+.btn-assitir{
+    width: 120px;
+    border-radius: 1px;
+    height:40px;
+    background-color: white;
+    border-radius: 2px ;
+    color: black;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:20px;
+
+
+    
+}
+.btn-assitir-svg{
+    display: block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    position: relative;
+    left: -90px;
+    border: 10px solid transparent;
+    border-left:10px solid black;
+    background-color: transparent;
+}
+.btn-minh-lista{
+    width: 120px;
+    border-radius: 1px;
+    height:40px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 2px ;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:20px;
+
+
+
+
 }
