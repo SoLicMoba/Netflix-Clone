@@ -11,45 +11,63 @@
     <!--     <link rel="stylesheet" href="responsive.css"> -->
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <nav>
-
-        <div>
-            <img src="./img/Netflix-logo.png" alt="Netflix-logo" width="90px">
-            <a href="https://youtube.com" id="a1">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Bombando</a>
-            <a href="#">Minha lista</a>
-            <a href="">Navegar por idiomas</a>
 
 
-            <div class="nav-pt-2">
-                <input type="button" id="search">
-                <a href="#">Infantil</a>
+    <div class="preview-container">
+        <div class="preview-left-info-hide">
+            <h1 class="preview-title"></h1>
+            <div class="preview-general-info_container">
+                <p class="movie-popularity"></p>
+                <p class="movie-release-date"></p>
+                <p class="movie-duration"></p>
+                <p class="movie-age"></p>
+            </div>
+            <p class="movie-description"></p>
+            <div class="btn-container">
+                <button class="btn-assistir">Assistir</button>
+                <button class="btn-minha-lista">Mais informações</button>
+            </div>
+        </div>
+        <div class="preview-cover"></div>
+    </div>
 
-                <img src="" alt="">
+    <div class="movies-section">
+        <div class="my-list">
+            <p>Minha lista</p>
+            <div class="popular-movies-container">
+                <div class="popular-movies-arrow-l"></div>
+                <div class="popular-movies-arrow-r"></div>
             </div>
 
         </div>
-    </nav>
+    </div>
 
     <header>
-        <video id="trailer" src="./img/Pinóquio por Guillermo del Toro _ Trailer oficial _ Netflix.mp4"
+        <img src="./img/logo.png" alt="Netflix-logo" width="90px">
+        <ul>
+            <li href="https://youtube.com" id="a1">Início</li>
+            <li href="#">Séries</li>
+            <li href="#">Filmes</li>
+            <li href="#">Bombando</li>
+            <li href="#">Minha lista</li>
+            <li href="">Navegar por idiomas</li>
+        </ul>
+
+        <div class="nav-pt-2">
+            <input type="button" id="search">
+            <a href="#">Infantil</a>
+
+            <img src="" alt="">
+
+            <!--         <video id="trailer" src="./img/Pinóquio por Guillermo del Toro _ Trailer oficial _ Netflix.mp4"
         
         muted
         poster="./img/bg.png"
         
-        ></video>
+        ></video> -->
     </header>
-
-    
-    <div class="preview-container"></div>
-    <p>Popular on Netflix</p>
-    <div class="popular-movies-container">
-        <div class="popular-movies-arrow-l"></div>
-        <div class="popular-movies-arrow-r"></div>
-    </div>
 
 </body>
 
