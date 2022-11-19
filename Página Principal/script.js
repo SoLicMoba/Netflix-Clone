@@ -81,7 +81,7 @@ async function api_call(url) {
     const data = await res.json()
     const filmes = data.results
     //Percorre cada filme, cria div e adiciona elementos a esta div
-   //Minha lista
+    //Minha lista
     filmes.map(filme => {
         const api_id = filme.id
         const api_poster = `https://image.tmdb.org/t/p/w500/${filme.poster_path}`
@@ -145,33 +145,95 @@ async function api_call(url) {
     btn_container.appendChild(btn_mais_info)
     card_movie_info.appendChild(btn_container)
 
+    const info_container = document.createElement('div')
+    info_container.classList.add('info-container')
+
+    const popularity = document.createElement('p')  
+    popularity.classList.toggle('popularity')
+
+    const age = document.createElement('div')
+    age.textContent='16'
+    age.classList.add('age')
+
+    const duration = document.createElement('p')
+    duration.classList.add('duration')
+
+    const hd = document.createElement('div')
+    hd.classList.add('hd')
+    hd.textContent='HD'
+
+    const features_container = document.createElement('ul')
+    features_container.classList.add('features-container')
+
+    const feature_1 = document.createElement('li')
+    feature_1.textContent='Ação'
+    feature_1.classList.add('feature')
+
+
+    const feature_2 = document.createElement('li')
+    feature_2.textContent='Drama'
+    feature_2.classList.add('feature')
+
+    const feature_3 = document.createElement('li')
+    feature_3.textContent='Investigação'
+    feature_3.classList.add('feature')
+
+    card_movie_info.appendChild(btn_container)
+    card_movie_info.appendChild(info_container)
 
     for (let i = 0; i < all_imgs.length; i++) {
         all_imgs[i].addEventListener('mouseover', (e) => {
-            
-           setTimeout(()=>{
-               movie_id = parseInt(e.target.id)
-               movie_preview(movie_id)
-               all_imgs[i].classList.toggle('card-img-hover')
-               card_movie_info.classList.remove('card-movie-info-hide')
-               card_movie_info.classList.add('card-movie-info')
-               const movie_choose = all_cards[i]
-   
-               function add_ids() {
-                   const tot = movie_id
-                   movie_choose.setAttribute('id', tot)
-                   movie_choose.appendChild(card_movie_info)
-               }
-               add_ids()
-           },500)
+            setTimeout(() => {
+                movie_id = parseInt(e.target.id)
+                movie_preview(movie_id)
+                all_imgs[i].classList.toggle('card-img-hover')
+                card_movie_info.classList.remove('card-movie-info-hide')
+                card_movie_info.classList.add('card-movie-info')
+                const movie_choose = all_cards[i]
+
+                function add_ids() {
+                    const tot = movie_id
+                    async function api_call_preview(url) {
+                        const res = await fetch(url)
+                        const data = await res.json()
+                        const filmes = data.results
+                        const movie = filmes.find(m => m.id === movie_id)
+                        console.log(movie);
+                        popularity.textContent = `${movie.popularity}%`
+                        duration.textContent='1:47h'
+                        console.log(movie);
+                        info_container.appendChild(popularity)
+                        info_container.appendChild(age)
+                        info_container.appendChild(duration)
+                        info_container.appendChild(hd)
+                        features_container.appendChild(feature_1)
+                        features_container.appendChild(feature_2)
+                        features_container.appendChild(feature_3)
+                        card_movie_info.appendChild(features_container)
+                
+                        function addPreview() {
+
+                        }
+                        addPreview()
+                    }
+                    api_call_preview(api)
+                    movie_choose.setAttribute('id', tot)
+                    movie_choose.appendChild(card_movie_info)
+                }
+                add_ids()
+            }, 500)
 
         })
+
+
         //Mouse out
         all_imgs[i].addEventListener('mouseout', (e) => {
             all_imgs[i].classList.toggle('card-img-hover')
-            
-            card_movie_info.classList.remove('card-movie-info')
+
+             card_movie_info.classList.remove('card-movie-info')
             card_movie_info.classList.add('card-movie-info-hide')
+ 
+
         })
     }
 }
