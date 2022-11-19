@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(36, 36, 36);
+    background-color:#141414;
     color: white;
     font-family: 'Helvetica';
 }
@@ -32,7 +32,7 @@ header > ul > li {
     font-weight: bold;
 }
 p{
-    font-size: 24px;
+    font-size: 19px;
 }
 
 .preview-container{
@@ -67,7 +67,7 @@ p{
     position: absolute;
     left: 40px;
     padding: 15px;
-    top: 200px;
+    top: 150px;
     display: block;
 }
 
@@ -119,26 +119,29 @@ p{
     font-size: 16px;
     letter-spacing: 0.5px;
     color: white;
-    height: 20px;
     font-weight: bold;
 }
 .btn-container{
     display: flex;
     gap: 20px;
-    margin-top: 110px;
+    margin-top: 20px;
+
 }
 .btn-assistir{
-    width: 130px;
-    border-radius: 1px;
+    width: 140px;
+    border: navajowhite;
+    border-radius: 4px;
     height:40px;
     background-color: white;
-    border-radius: 2px ;
+
     color: black;
-    font-size: 17px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     padding-left:20px;
+    letter-spacing: -0.3px;
 
 
     
@@ -160,14 +163,16 @@ p{
     border: navajowhite;
     border-radius: 3px;
     height:40px;
-    background-color: rgb(59, 59, 59);
+    background-color: rgba(203, 203, 203, 0.323);
     border-radius: 2px ;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left:20px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .movies-section{
@@ -176,41 +181,92 @@ p{
     top: -80px;
 }
 
-.popular-movies-container {
+.my-list {
     height: 180px;
     width: 100%;
-    display: inline-block;
     gap: 10px;
     overflow: scroll;
     white-space: nowrap;
     text-align: center;
     padding-bottom: 10px !important;
     display: flex;
-    overflow-y: hidden;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 10px;
+}
+.my-list-movies-container{
+    height: 180px;
+    width: 100%;
+    gap: 10px;
+    overflow: scroll;
+    white-space: nowrap;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.my-list > p {
+    position: relative;
+    color:red;
+}
+
+.popular-movies-container{
+    height: 180px;
+    width: 100%;
+    gap: 10px;
+    overflow: scroll;
+    white-space: nowrap;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    overflow: hidden;
     align-items: center;
     padding-top: 10px;
 }
 
-
-
-.card {}
+.card:hover {
+    cursor: pointer;
+}
 
 .card-img {
-    height: 140px;
-    width: 270px;
+    height: 130px;
+    width: 220px;
     overflow: scroll;
     z-index: 2;
     transition: 0.1s;
     border-radius: 3px;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
 }
 
-.card-img:hover {
-    transform: scale(1.1);
+.card-img-hover {
+    transform: scale(1.2);
     z-index: 5;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
+.card-movie-info{
+    height: 130px;
+    width: 220px;
+    padding: 15px;
+    transform: scale(1.2);
+    transition: 0.3s;
+    position: absolute;
+
+    background-color: rgb(36, 36, 36);
+    transition: 0.3s;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+.card-movie-info-hide{
+    display: none;
+    transform: 0.3s;
+}
 /* .popular-movies-arrow-l {
     height: 100px;
     background-color: rgba(255, 255, 255, 0.789);
@@ -234,3 +290,35 @@ p{
     background-color: rgba(255, 255, 255, 0.738);
 }
 
+.btn-info-container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-play{
+    height: 26px;
+    width: 26px;
+    border-radius:100%;
+    background-color: white;
+}
+.btn-plus{
+    height: 26px;
+    width: 26px;
+    border: 1.5px solid rgba(255, 255, 255, 0.594);
+    border-radius:100%;
+}
+.btn-like{
+    height: 26px;
+    width: 26px;
+    border: 1.5px solid rgba(255, 255, 255, 0.594);
+    border-radius:100%;
+}
+.btn-mais-info{
+    height: 26px;
+    width: 26px;
+    border: 1.5px solid rgba(255, 255, 255, 0.594);
+    border-radius:100%;
+    position: relative;
+    right: -50px;
+}
